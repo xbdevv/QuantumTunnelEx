@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <!--<TargetFramework>net8.0;net7.0</TargetFramework>-->
+    <TargetFrameworks>net10.0</TargetFrameworks>
+    <!--;net9.0;net8.0;net7.0-->
+      <!-- Enable experimental and future features C# 14 -->
+    <!--<LangVersion>14.0</LangVersion>-->
+    <LangVersion>preview</LangVersion>
+    <!--Optional: Explicitly enable features that are currently under development -->
+    <Features>strict</Features>
+    
+   <Platforms>AnyCPU;x64</Platforms>
+    
+   <PublishAot>False</PublishAot>
+  </PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<OutputPath></OutputPath>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<OutputPath />
+	</PropertyGroup>
+  
+</Project>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36127.28
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantumTunnelEx", "Src\QuantumTunnelEx\QuantumTunnelEx.csproj", "{2AB09206-26EB-49D7-8D22-B8D2AFB2F4BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AB09206-26EB-49D7-8D22-B8D2AFB2F4BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AB09206-26EB-49D7-8D22-B8D2AFB2F4BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AB09206-26EB-49D7-8D22-B8D2AFB2F4BF}.Debug|x64.ActiveCfg = Debug|x64
+		{2AB09206-26EB-49D7-8D22-B8D2AFB2F4BF}.Debug|x64.Build.0 = Debug|x64
+		{2AB09206-26EB-49D7-8D22-B8D2AFB2F4BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AB09206-26EB-49D7-8D22-B8D2AFB2F4BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AB09206-26EB-49D7-8D22-B8D2AFB2F4BF}.Release|x64.ActiveCfg = Release|x64
+		{2AB09206-26EB-49D7-8D22-B8D2AFB2F4BF}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B307183-0664-4461-95B3-15052E4B4401}
+	EndGlobalSection
+EndGlobal

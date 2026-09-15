@@ -2,24 +2,33 @@
 A Xbox One/Series Flash Dumper for SystemOS created in C#.
 
 ### Prerequisites
-.NET 7 is required, for instructions on installing .NET to your console over SSH follow https://xboxoneresearch.github.io/wiki/development/installing-compatible-software/.
+.NET 10 is required, for instructions on installing .NET to your console over SSH follow https://xboxoneresearch.github.io/wiki/development/installing-compatible-software/.
 
 You must also have an administrator account, with a shell **elevated to SYSTEM** on your console in either Retail or Dev Mode to access the flash driver. 
 
 ### Usage
 If dotnet isn't in your PATH:
-`cd dotnet`
-`dotnet QuantumTunnel.dll FileToDump`
+`<dotnet path>\dotnet.exe <path to QuantumTunnelEx>\QuantumTunnelEx.dll -t FileToDump`
 
 If dotnet is in your PATH:
-`dotnet QuantumTunnel.dll FileToDump`
+`dotnet QuantumTunnelEx.dll FileToDump`
 
-f.e. `dotnet QuantumTunnel.dll certkeys.bin`
+f.e. `dotnet <path to QuantumTunnelEx>\QuantumTunnelEx.dll -t certkeys.bin`
 
-To obtain a raw flash image, usable in XBFS tools, use --rawdump (1GBish on Series S/X):
-`dotnet QuantumTunnel.dll --rawdump -o dump.bin`
+To obtain a raw flash image, usable in XBFS tools, use --rawdump (1GBish on Series S/X and 5GBish on Xbox One):
+`<dotnet path>\dotnet.exe <path to QuantumTunnelEx>\QuantumTunnelEx.dll -r -o XBFS.bin`
 
-If using the published/self-contained build, use `QuantumTunnel.exe` instead of `dotnet QuantumTunnel.dll`
+If using the published/self-contained build, use `QuantumTunnelEx.exe` instead of `dotnet QuantumTunnelEx.dll`
+
+
+
+#### More examples of command lines:
+`<dotnet path>\dotnet.exe <path to QuantumTunnelEx>\QuantumTunnelEx.dll -d \\.\Xvux\FlashFs -t devkit.ini -wd DUMP_FLASH\n\n" +
+`<dotnet path>\dotnet.exe <path to QuantumTunnelEx>\QuantumTunnelEx.dll -d \\.\Xvux\FlashFs -t devkit.ini -o customdevkit.ini\n\n" +
+`<dotnet path>\dotnet.exe <path to QuantumTunnelEx>\QuantumTunnelEx.dll -r (will output a filename flash.bin)\n" +
+`<dotnet path>\dotnet.exe <path to QuantumTunnelEx>\QuantumTunnelEx.dll -r -o XBFS.bin\n" +
+`<dotnet path>\dotnet.exe <path to QuantumTunnelEx>\QuantumTunnelEx.dll -t certkeys.bin\n" +
+`<dotnet path>\dotnet.exe <path to QuantumTunnelEx>\QuantumTunnelEx.dll -t certkeys.bin -o certkeys_dump.bin\n"
 
 ### FAQ
 Q: Why can't I dump X file? (host.xvd, system.xvd, etc)

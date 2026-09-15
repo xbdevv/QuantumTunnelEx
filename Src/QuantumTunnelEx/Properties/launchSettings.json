@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "QuantumTunnel": {
+      "commandName": "Project",
+      "commandLineArgs": "-d \\\\.\\Xvuc\\FlashFs -t devkit.ini"
+    }
+  }
+}
