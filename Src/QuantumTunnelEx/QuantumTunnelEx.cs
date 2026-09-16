@@ -102,8 +102,7 @@ namespace QuantumTunnel
                 };
                 var progress = new Progress<ulong>(bytesRead =>
                 {
-                    //if (bytesRead > 0)
-                        Console.Write($"\rcurrent byte(s) read: {FormatSize(bytesRead, "[{0:0.##} {1} ({2})]")}   ");
+                    Console.Write($"\rcurrent byte(s) read: {FormatSize(bytesRead, "[{0:0.##} {1} ({2})]")}   ");
                 });
 
                 if (rawDump)
