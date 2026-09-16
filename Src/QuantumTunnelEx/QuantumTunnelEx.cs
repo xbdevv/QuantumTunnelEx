@@ -24,7 +24,7 @@ namespace QuantumTunnel
             //debug
             //args = new string[] { "-r" };
             //args = new string[] { "-t", "certkeys.bin" };
-            //args = new string[] { "-t", "certkeys.bin","-o","certkays_dump.bin" };
+            //args = new string[] { "-t", "certkeys.bin","-o","certkeys_dump.bin" };
             //args = new string[] { "-l" };
             Console.WriteLine("QuantumTunnel - C# FlashFS Reader and more");
 
